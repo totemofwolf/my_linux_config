@@ -1,0 +1,17 @@
+deb http://all.repository.backtrack-linux.org revolution main microverse non-free testing
+deb http://64.repository.backtrack-linux.org revolution main microverse non-free testing
+deb http://source.repository.backtrack-linux.org revolution main microverse non-free testing
+#deb http://updates.repository.backtrack-linux.org revolution main microverse non-free testinga
+
+#163
+deb http://mirrors.163.com/ubuntu/ lucid main universe restricted multiverse
+deb-src http://mirrors.163.com/ubuntu/ lucid main universe restricted multiverse
+deb http://mirrors.163.com/ubuntu/ lucid-security universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-security universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-updates universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-proposed universe main multiverse restricted
+deb http://mirrors.163.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-backports universe main multiverse restricted
+deb-src http://mirrors.163.com/ubuntu/ lucid-updates universe main multiverse restricted
+

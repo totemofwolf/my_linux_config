@@ -1,0 +1,4 @@
+#30  12  *   *   *   sudo /usr/bin/rsync -ravzP --delete-after rsync://ftp.slackware.com/slackware/slackware64-current /wind > /tmp/rsync_slack.log 2>&1
+30  12  *   *   *   sudo /usr/bin/rsync -ravzP --delete-after rsync://ftp.heanet.ie/mirrors/ftp.slackware.com/pub/slackware/slackware64-current /wind > /tmp/rsync_slack.log 2>&1
+30  13  *   *   *   sudo /usr/bin/rsync -ravzP --delete-after rsync://taper.alienbase.nl/mirrors/people/alien/multilib/current/* /wind/soft/linux/multilib/ > /tmp/rsync_multilib.log 2>&1 && sudo upgradepkg --reinstall --install-new /wind/soft/linux/multilib/*.t?z >/dev/null 2>&1 && sudo upgradepkg --install-new /wind/soft/linux/multilib/slackware64-compat32/*-compat32/*.t?z >/dev/null 2>&1
+

@@ -1,0 +1,75 @@
+####.bashrc######
+
+# source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+shopt -s extglob
+PROMPT_COMMAND='history -a'
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+
+export LANG=en_US.UTF-8
+#export LC_ALL=C
+export LC_ALL=en_US.UTF-8
+#export LC_ALL=zh_CN.UTF-8
+#export LC_ALL=zh_CN.GBK
+
+export EDITOR="vim"
+
+if [ `whoami` == "root" ]; then
+    export PS1='\[\e[0;31m\][\u@\h]\[\e[36m\][\!][\w]\$\[\e[0m\] '
+else
+    export PS1='\[\e[0;32m\][\u@\h]\[\e[36m\][\!][\w]\$\[\e[0m\] '
+fi
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto -n'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more aliases
+alias ll='ls -lhF'
+alias cp='rsync -azP'
+alias ssh='ssh -C'
+alias scp='scp -C'
+alias gcc='gcc -Wall -pipe'
+alias g++='g++ -pipe'
+#alias man='pinfo -m'
+alias gnome-terminal='gnome-terminal --maximize'
+alias fq='sudo python /opt/goagent/local/proxy.py >/dev/null 2>&1 &'
+
+#######fcitx configure#######
+export XMODIFIERS=@im="fcitx"
+export XIM="fcitx"
+export XIM_PROGRAM="/usr/bin/fcitx"
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
+
+######java configure#######
+export QSYS_ROOT="/home/q"
+export JAVA_HOME="/home/q/java/default"
+export JAVA_BASE="/home/q/java/jdk1.7"
+export Eclipse_HOME="/home/q/Eclipse/eclipse"
+export WORK_ROOT="/home/work"
+export WORKSPACE="/home/work/WorkSpace"
+
+#####hadoop configure######
+export HADOOP_HOME="/home/q/hadoop"
+export HIVE_HOME="/home/q/hive"
+
+export PATH=/sbin:/usr/sbin:$JAVA_HOME/bin:$JAVA_BASE/bin:$Eclipse_HOME:$HADOOP_HOME/bin:$HIVE_HOME/bin:$PATH
+

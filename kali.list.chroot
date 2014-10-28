@@ -1,0 +1,96 @@
+# kali meta-package depends on everything we want
+kali-linux-full
+kali-root-login
+kali-defaults
+kali-menu
+kali-debtags
+kali-archive-keyring
+debian-installer-launcher
+alsa-tools
+cryptsetup
+network-manager
+grub2
+fcitx
+fcitx-pinyin
+wpasupplicant
+dhcpcd
+pppoe
+oxygen-icon-theme
+gtk3-engines-oxygen
+gtk2-engines-oxygen
+konqueror
+remmina
+flashplugin-nonfree
+
+# provide l10n for everybody
+locales-all
+console-setup
+kbd
+console-data
+console-common
+
+#if ARCHITECTURES armel armhf
+cgpt
+vboot-utils
+vboot-kernel-utils
+#endif
+
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer
+firmware-b43-installer
+guymager
+#endif
+
+# Graphical desktops depending on the architecture
+#
+# You can replace all the remaining lines with a list of the
+# packages required to install your preferred graphical desktop
+# or you can just comment everything except the package of your
+# preferred desktop.
+
+#if ARCHITECTURES i386 amd64
+# *** GNOME DESKTOP ***
+# gnome-core
+# gnome-brave-icon-theme
+# gnome-shell-extensions
+# nautilus-open-terminal
+# gnome-orca
+#endif
+
+#if ARCHITECTURES armel armhf
+# *** XFCE DESKTOP ***
+# xfce4-places-plugin:
+# xfce4
+# network-manager
+# xfce4-mixer
+#endif
+
+# *** XFCE DESKTOP ***
+ xfce4-places-plugin:
+ xfce4
+ network-manager-gnome
+ xfce4-terminal
+ xfce4-terminal-dbg
+ xfce4-mixer
+ xfce4-power-manager
+
+# *** KDE DESKTOP ***
+# kde-plasma-desktop
+# kdm
+# kmix
+# network-manager-kde
+
+# *** LXDE DESKTOP ***
+# lxde
+
+# *** Enlightenment DR17 DESKTOP ***
+# e17
+
+# *** MATE DESKTOP
+# | NOTE: The mate desktop requires other changes to the live config.
+# | See http://docs.kali.org/live-build/customize-the-kali-desktop-environment
+# | for details
+# xorg
+# mate-archive-keyring
+# mate-core
+# mate-desktop-environment
