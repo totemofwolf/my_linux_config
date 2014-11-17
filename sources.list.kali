@@ -14,7 +14,7 @@
 ##debian security updates
 #deb http://security.debian.org/ wheezy/updates main contrib non-free contrib
 #deb-src http://security.debian.org/ wheezy/updates main contrib non-free contrib
-#
+
 # aliyun
 deb http://mirrors.aliyun.com/kali kali main non-free contrib
 deb-src http://mirrors.aliyun.com/kali kali main non-free contrib
@@ -41,11 +41,11 @@ deb-src http://mirrors.aliyun.com/kali-security kali/updates main contrib non-fr
 #deb http://mirrors.ustc.edu.cn/kali kali main non-free contrib
 #deb-src http://mirrors.ustc.edu.cn/kali kali main non-free contrib
 #deb http://mirrors.ustc.edu.cn/kali-security kali/updates main contrib non-free
-#
-## mozilla
-#deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main
-##apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C1289A29
-#
+
+# mozilla
+deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main
+#apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C1289A29
+
 ## virtualbox
 #deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
 ##wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -

@@ -44,7 +44,7 @@
 
 # Section Start: Localhost
 127.0.0.1        localhost.localdomain localhost
-127.0.0.1        bt
+127.0.0.1        kali
 # Section End: Localhost
 
 # Section Start: activation-helper
