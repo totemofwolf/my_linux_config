@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 
 shell_dir=$(cd `dirname $0`; pwd);
 

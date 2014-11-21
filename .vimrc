@@ -29,7 +29,7 @@
     set showmode
     "set background=light
     set background=dark
-    set number
+    "set number
     syntax enable
     syntax on
     set linebreak   " 不在单词中间断行
