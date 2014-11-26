@@ -64,7 +64,7 @@
 
 " 状态栏
 	set laststatus=2      " 总是显示状态栏
-	highlight StatusLine cterm=bold ctermfg=lightgreen ctermbg=darkgray
+	highlight StatusLine cterm=bold ctermfg=lightblue ctermbg=white
 	" 获取当前路径，将$HOME转化为~
 	function! CurDir()
 		let curdir = substitute(getcwd(), $HOME, "~", "g")
